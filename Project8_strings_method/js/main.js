@@ -37,5 +37,5 @@ function uppercase(){
         function numbertostring(){    
 
             var sentence = 168;            
-            document.getElementById("upper").innerHTML = sentence.toString();
+            document.getElementById("upper").innerHTML = sentence.toString;
             }
