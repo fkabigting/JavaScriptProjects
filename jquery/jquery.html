@@ -1,0 +1,36 @@
+<!--jQuery basics-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+       <!--to run jquery you need to connect to this url-->
+
+    </head>
+
+    <script>
+        //document.read means to load the document before running jquery
+        $(document).ready (function() { 
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            </div>\
+                            </div>\
+                            </body>"
+            );
+//this is the css - it sets '2' to have color red
+            $("#2").css({"color":"red"});
+            $("#3").click (function() {
+                $('h1').hide();
+            });
+        });
+
+        
+    </script>
+</html>
